@@ -12,7 +12,7 @@ export default function About() {
                 <div className="aboutMeContent">        
                     <p>
                         I am a passionate and dedicated software developer student at Governor House. 
-                        I am a student of O'Level. I have so much interest in web development, coding, 
+                        I am a student of O&apos;Level. I have so much interest in web development, coding, 
                         and ethical hacking. My hobbies are coding, sports, reading, and outing. 
                         I love to travel to explore the world.
                     </p>

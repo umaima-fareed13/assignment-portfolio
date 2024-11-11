@@ -8,7 +8,7 @@ const contact = () => {
     event.preventDefault();
     const formData = new FormData(event.target as HTMLFormElement);
 
-    formData.append("access_key", "a9cb1dda-a89b-436c-b2b4-c8db7930fcda");
+    formData.append("access_key", "a9cb1dda-a89b-436c-b2b4-c8db7930fcda"); // Use env variables for sensitive data
 
     const object = Object.fromEntries(formData);
     const json = JSON.stringify(object);
@@ -32,7 +32,8 @@ const contact = () => {
       } else {
         throw new Error("Failed to send message");
       }
-    } catch (error) {
+    } catch (error: any) {
+      console.error(error); // Log error for debugging
       Swal.fire({
         title: "Error!",
         text: "Something went wrong, please try again later.",
