@@ -32,7 +32,7 @@ const contact = () => {
       } else {
         throw new Error("Failed to send message");
       }
-    } catch (error: any) {
+    } catch (error: unknown) {
       console.error(error); // Log error for debugging
       Swal.fire({
         title: "Error!",
