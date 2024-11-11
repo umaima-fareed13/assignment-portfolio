@@ -328,11 +328,11 @@ a {
 }
 
 hr {
-    width: 130%;
+    width: 150%;
     margin: 0 auto;
     margin-top: 5rem;
-    margin-left: -110px;
-    margin-bottom: 1rem;
+    margin-left: 55px;
+    margin-bottom: -1rem;
     border: none;
     border-top: 2px solid rgba(128, 128, 128, 0.229);
 }

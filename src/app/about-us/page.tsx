@@ -1,30 +1,47 @@
 import Header from "../components/header";
-export default function about() {
+import Image from "next/image"; // Import next/image for image optimization
+
+export default function About() {
     return (
         <div>
-            <Header/>
+            <Header />
             <div className="myselfContainer">
-            <div>
-                <h1 className="aboutMe">About Myself</h1>
-            </div>
-            <div className="aboutMeContent">        
-                    <p>I am a passionate and dedicated 
-                    software developer student at governor House 
-                    I am a student of o'Level i have so much interest
-                    in web developing, Coding and in ethical Hacking
-                    my hobbies are coding, sports, reading, outing 
-                    I love to do a travelling to explore world</p>
-            </div>
+                <div>
+                    <h1 className="aboutMe">About Myself</h1>
+                </div>
+                <div className="aboutMeContent">        
+                    <p>
+                        I am a passionate and dedicated software developer student at Governor House. 
+                        I am a student of O'Level. I have so much interest in web development, coding, 
+                        and ethical hacking. My hobbies are coding, sports, reading, and outing. 
+                        I love to travel to explore the world.
+                    </p>
+                </div>
             </div>
             <div className="images">
-            <img src={"./programming.jpg"} />
+                <Image 
+                    src={"/programming.jpg"} 
+                    alt="Programming" 
+                    width={600} 
+                    height={400} 
+                />
             </div>
             <div className="myself">
-                <img src={"./capture.jpg"}/>
+                <Image 
+                    src={"/capture.jpg"} 
+                    alt="Capture Image" 
+                    width={600} 
+                    height={400} 
+                />
             </div>
             <div className="travelling">
-            <img src={"./travelling.jpg"} />
+                <Image 
+                    src={"/travelling.jpg"} 
+                    alt="Travelling" 
+                    width={600} 
+                    height={400} 
+                />
             </div>
         </div>
-    )
+    );
 }
